@@ -1,0 +1,17 @@
+{
+	"name": "Olivia",
+	"surname": "Dunham",
+	"is_homeroom_teacher": true,
+	"classes": [],
+	"subject": "PE",
+	"students": [
+		{
+			"name": "Ella",
+			"surname": "Blake"
+		},
+		{
+			"name": "Christopher",
+			"surname": "Broyles"
+		}
+	]
+}
