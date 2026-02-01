@@ -3,6 +3,12 @@ import sys
 import os
 from os import getcwd
 import pickle
+import csv
+import math
+import random
+import webbrowser
+from datetime import datetime, date
+import re
 
 #You have to input them from the terminal
 # print(sys.argv[0]) # 0 is reserved for name of the script
@@ -65,3 +71,59 @@ fd.write(pickle_string)
 fd.close()
 
 print(pickle.loads(pickle_string))
+
+#============CSV format========
+#creating and reading
+with open("csv_file.csv", "w", newline="") as file:
+    writer = csv.writer(file)
+    writer.writerow([1, 2, 3])
+    writer.writerow(["a", "b", 4, "example"])
+
+with open("csv_file.csv", "r", newline="") as file:
+    reader = csv.reader(file)
+    for line in reader:
+        print(line)
+
+
+#math library
+print(math.floor(99.9)) #round the number down
+print(math.ceil(99.00001))  #round the number up
+print(math.fabs(-10)) #shows an absolut value - removes the minus
+print(math.log(5))
+print(math.sin(45))
+print(math.cos(45))
+print(math.fsum([2,3,8]))
+
+#random library
+print(random.random()) #returns a random number from 0-1
+print(random.randrange(0,10, step=1)) #random in range
+print(random.choice(["a", "b", "c"]))
+
+lst = ["opt1", "opt2", "opt3"]
+random.shuffle(lst) #mix the list of items
+print(lst)
+
+print(random.sample(lst, k=2)) #returns a random sample from a list. In this example choose 2 items (k)
+
+#web browser
+#webbrowser.open("https://google.com") #open a web page
+
+#date time
+date_now = datetime.now()
+print(date_now)
+print(date_now.year)
+
+custom_date = date(2025, 1, 24)
+print(custom_date)
+
+#========= regex ============
+#website version regex101.com - tells you what signs you have.
+#used for validation for example if phone number is correctly written
+
+text = "12345"
+match = re.match("^\d\d\d\d$", text)
+
+if match:
+    print("match")
+else:
+    print("not match")

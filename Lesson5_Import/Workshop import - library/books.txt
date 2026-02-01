@@ -1,1 +1,1 @@
-Harry Potter  |  JK Rowling  | False
+Harry Potter|JK Rowling|True

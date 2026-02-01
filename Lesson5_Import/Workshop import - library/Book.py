@@ -6,7 +6,7 @@ class Book:
 
     def describe(self):
         status = "Available" if self.available else "Borrowed"
-        return f"{self.title} | {self.author} | {self.available}"
+        return f"{self.title} | {self.author} | {status}"
 
     def to_file_format(self):
-        return f"{self.title} | {self.author} | {self.available}"
+        return f"{self.title}|{self.author}|{self.available}"
