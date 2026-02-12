@@ -1,0 +1,17 @@
+{
+    "John.Doe": {
+        "name": "John",
+        "age": 30,
+        "city": "New Your"
+    },
+    "Jan.Kowalski": {
+        "name": "Jan",
+        "age": 25,
+        "city": "Warsaw"
+    },
+    "Janusz.Kowalski": {
+        "name": "Janusz",
+        "age": 50,
+        "city": "Sosnowiec"
+    }
+}
