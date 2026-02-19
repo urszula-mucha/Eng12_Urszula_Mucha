@@ -5,6 +5,7 @@ class Student:
         self.year = year
         self.group = group
 
+#instead of writing a code in general file, we build a function inside a class
     def get_name(self):
         return "{} {}".format(self.firstname, self.lastname)
 

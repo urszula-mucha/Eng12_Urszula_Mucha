@@ -14,6 +14,6 @@ class FileReader:
         if not line:
             self.done = True
             self.fp.close()
-            return StopIteration
+            raise StopIteration
         self.lines.append(line[:-1])
         return line[:-1]

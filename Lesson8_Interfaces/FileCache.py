@@ -3,7 +3,7 @@ class FileCache:
         self.fp = open(filepath)
         self.cache = {}
 
-    #If cache not contains character then add it
+    #If cache doesn't contain a character then add it
     def readchar(self, position):
         if position not in self.cache:
             self.fp.seek(position)
